@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    decoration: none;
+  }
+
+body {
+  font-family: monospace;
+  background: silver;
+}
+
+/* ------------------------ START HEADER STYLES ------------------------*/
+
+
+
+header {
+    max-width: 100%;
+    min-height: 95vh;
+    display: flex;
+    background-image: url(../media/img/banner/banner_1.jpg);
+    -webkit-background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+}
+
+/* ------------------------ START GLASS CONTAINER ------------------------*/
+
+.banner__glass {
+  display: relative;
+  height: 80vh;
+  width: 40%;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.8);
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.6);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  margin: 7.5vh 0 5vh 7.5vh;
+}
+
+.banner__glass .glass__content{
+  width: 100%;
+  padding: 20px;
+  align-items: center;
+  text-align: center;
+}
+
+.banner__glass .glass__content h1 {
+  margin: 30px 0 130px 0;
+  font-size: 2.5rem;
+  color: green;
+}
+
+.banner__glass .glass__content h3 {
+  font-family: 'Fixedsys Excelsior 3.01';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  color: green;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* ------------------------ END GLASS CONTAINER ------------------------ */
+
+/*------------------------ START TYPING EFFECT ------------------------*/
+
+.typing {
+  position: relative;
+  margin left: 10px;
+}
+
+.typing::after {
+  content: "";
+  position: relative;
+  width: 1px;
+  height: 5%;
+  border-right: 2px solid green;
+  right: -5px;
+  animation: blink 0.5s infinite ease;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+} /* POINTER BLINK ANIMATION */
+
+.phantom {
+  opacity: 0;
+  visibility: hidden;
+}
+
+
+/*------------------------ END TYPING EFFECT ------------------------*/
+
+/*------------------------ START RESPONSIVE GLASS ------------------------*/
+
+@media only screen and (min-width: 580px) and (max-width: 724px) {
+
+  .banner__glass {
+    width: 50%;
+  }
+
+  .banner__glass .glass__content .glass__text h3 {
+    font-size: 1.5rem;
+  }
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 579px) {
+
+  .banner__glass {
+    width: 55%;
+  }
+
+  .banner__glass .glass__content .glass__text h3 {
+    font-size: 1.5rem;
+  }
+
+}
+
+@media only screen and (max-width: 479px) {
+
+  .banner__glass {
+    width: 65%;
+  }
+
+  .banner__glass .glass__content .glass__text h3 {
+    font-size: 1.5rem;
+  }
+
+}
+
+/*------------------------ END RESPONSIVE GLASS------------------------*/
+
+/*------------------------ START NAVBAR ------------------------*/
+
+
+/*------------------------ END NAVBAR ------------------------*/
+
+/*------------------------ END HEADER STYLES ------------------------*/
+
+/*------------------------ START MAIN STYLES ------------------------*/
+
+main {}
+
+/*------------------------ END MAIN STYLES ------------------------*/
+
+/*------------------------ START FOOTER STYLES ------------------------*/
+
+footer {
+    background: #414141;
+    padding: 50px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer {
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-foo {
+    text-align: center;
+}
+
+.content-foo h4 {
+    color: #fff;
+    border-bottom: 3px solid green;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo p {
+    color: #ccc;
+}
+
+.container-logos img {
+    width: 21px;
+    height: 21px;
+    margin: 5px;
+}
+
+.titulo-final {
+    text-align: center;
+    font-size: 24px;
+    margin: a 20px 0 0 0;
+    color: #9e9797;
+}
+
+/*------------------------ END FOOTER STYLES ------------------------*/
